@@ -1,0 +1,21 @@
+package basics.methods;
+
+import java.util.Scanner;
+
+public class MethodsExample {
+	public static void main(String[] args) {
+		int z = add();
+		System.out.println("Sum: "+z);
+	}
+
+	 static int add() {
+		System.out.println("Enter two numbers: ");
+		Scanner sc = new Scanner(System.in);
+		int x = sc.nextInt();
+		int y = sc.nextInt();
+		
+		int sum;
+		sum = x+y;
+		return sum;
+	}
+}

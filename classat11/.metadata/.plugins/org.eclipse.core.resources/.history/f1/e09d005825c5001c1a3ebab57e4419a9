@@ -1,0 +1,13 @@
+package collectionVariables;
+
+import java.util.HashMap;
+
+public class HashMapExample {
+	public static void main(String[] args) {
+		HashMap<String, Integer> age= new HashMap<>();
+		age.put("Ujjwal", 22);
+		age.put("Dipen", 23);
+		age.put("Bishesh", 26);
+		
+	}
+}

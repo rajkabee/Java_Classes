@@ -1,0 +1,21 @@
+package basics.controlStatements.loops;
+
+import java.util.Scanner;
+
+public class PrimeComposite {
+	public static void main(String[] args) {
+		System.out.println("Enter a number: ");
+		int num = new Scanner(System.in).nextInt();
+		int i=2, flag=0;
+		if(num<2) {
+			switch (key) {
+			case value: {
+				
+				yield type;
+			}
+			default:
+				throw new IllegalArgumentException("Unexpected value: " + key);
+			}
+		}
+	}
+}
