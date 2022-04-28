@@ -1,0 +1,26 @@
+package basics.oopConcepts;
+
+public class ClassExample {
+	public static void main(String[] args) {
+		Student st = new Student();
+		st.id = 123;
+		st.name = "Pranaya Rajbhandari";
+		st.email = "pranaya@gmail.com";
+		st.contact = 98765567644l;
+		
+		System.out.println(st.display());
+	}
+	
+	
+	public static class Student{
+		int id;
+		String name;
+		String email;
+		long contact;
+		
+		public String display() {
+			return this.id+". "+this.name+"\t"+this.email+"\t"+this.contact;
+		}
+		
+	}
+}

@@ -1,0 +1,5 @@
+package basics.accessModifiers.test;
+
+public class NeighbourClass {
+
+}

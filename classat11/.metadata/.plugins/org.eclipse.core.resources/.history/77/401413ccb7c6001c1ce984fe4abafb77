@@ -1,0 +1,5 @@
+package basics.accessModifiers;
+
+public class MyClass {
+
+}
