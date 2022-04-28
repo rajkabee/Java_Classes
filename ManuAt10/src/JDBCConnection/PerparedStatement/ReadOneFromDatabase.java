@@ -1,4 +1,4 @@
-package JDBCConnection.Statement;
+package JDBCConnection.PerparedStatement;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
