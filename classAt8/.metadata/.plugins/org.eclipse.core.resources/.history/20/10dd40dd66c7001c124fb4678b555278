@@ -1,0 +1,20 @@
+package javas.basics.controlStatements.loops;
+
+public class WhileLoopExample {
+	public static void main(String[] args) {
+		//i-> iterator
+		int i = 0;			//initialization
+		while(i<5) {		//while(condition)
+			System.out.println("While loop!");
+			i++;			//iteration
+		}
+		
+		i=1;
+		int sum=0;
+		while(i<=10) {
+			sum+=i;
+			i++;
+		}
+		System.out.println("Sum of 10 natural numbers: "+sum);
+	}
+}
