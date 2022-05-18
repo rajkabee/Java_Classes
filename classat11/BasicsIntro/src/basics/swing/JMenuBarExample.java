@@ -4,14 +4,18 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.Font;
 import java.awt.Toolkit;
+import java.sql.SQLException;
 
 import javax.swing.JFrame;
 import javax.swing.JMenu;
 import javax.swing.JMenuBar;
 import javax.swing.JMenuItem;
 
+import basics.swing.tableModelExample.StudentJTable;
+import basics.swing.tableModelExample.StudentTable;
+
 public class JMenuBarExample {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws SQLException {
 		JFrame frame = new JFrame();
 		frame.setTitle("JFrame Title");
 		frame.setBounds(200, 100, 800, 500);
@@ -38,7 +42,9 @@ public class JMenuBarExample {
 		StudentForm form = new StudentForm();
 		frame.add(form, BorderLayout.CENTER);
 		
+		StudentTable stTable = new StudentTable("Student's Table");
 		
+		frame.add(stTable, BorderLayout.SOUTH);
 		
 		frame.setVisible(true);
 		

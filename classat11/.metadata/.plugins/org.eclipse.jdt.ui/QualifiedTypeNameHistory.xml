@@ -30,9 +30,10 @@
     <fullyQualifiedTypeName name="javax.swing.JTable"/>
     <fullyQualifiedTypeName name="javax.swing.table.AbstractTableModel"/>
     <fullyQualifiedTypeName name="java.util.List"/>
-    <fullyQualifiedTypeName name="basics.swing.model.Student"/>
     <fullyQualifiedTypeName name="jdbc.dao.StudentDao"/>
-    <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="basics.swing.model.StudentDao"/>
     <fullyQualifiedTypeName name="javax.swing.table.DefaultTableModel"/>
+    <fullyQualifiedTypeName name="basics.swing.model.StudentDao"/>
+    <fullyQualifiedTypeName name="java.util.ArrayList"/>
+    <fullyQualifiedTypeName name="basics.swing.model.Student"/>
+    <fullyQualifiedTypeName name="basics.swing.tableModelExample.StudentTable"/>
 </qualifiedTypeNameHistroy>
