@@ -9,4 +9,5 @@
     <fullyQualifiedTypeName name="javas.oop.abstraction.DataAccessObject"/>
     <fullyQualifiedTypeName name="javas.oop.abstraction.DaoInterface"/>
     <fullyQualifiedTypeName name="java.lang.Override"/>
+    <fullyQualifiedTypeName name="java.lang.Thread"/>
 </qualifiedTypeNameHistroy>

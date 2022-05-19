@@ -49,4 +49,6 @@ public class JMenuBarExample {
 		frame.setVisible(true);
 		
 	}
+	
+	
 }
