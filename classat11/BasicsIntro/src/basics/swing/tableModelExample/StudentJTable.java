@@ -48,7 +48,8 @@ public class StudentJTable extends JFrame implements ActionListener {
 		    	      {
 		    	        public void actionPerformed(ActionEvent event)
 		    	        {
-		    	          JOptionPane.showMessageDialog(null,"Do you want to modify this line?");
+		    	        	
+		    	        	JOptionPane.showMessageDialog(null,"Do you want to modify this line?");
 		    	        }
 		    	      }
 		    	    );
@@ -64,7 +65,7 @@ public class StudentJTable extends JFrame implements ActionListener {
 		     }
 		     public Component getTableCellRendererComponent(JTable table, Object value,
 		     boolean isSelected, boolean hasFocus, int row, int column) {
-		       setText((value == null) ? "Modify" : value.toString());
+		       setText((value == null) ? "Delete" : value.toString());
 		       return this;
 		     }
 		   }
@@ -79,7 +80,7 @@ public class StudentJTable extends JFrame implements ActionListener {
 		     public Component getTableCellEditorComponent(JTable table, Object value,
 		     boolean isSelected, int row, int column) 
 		     {
-		       label = (value == null) ? "Modify" : value.toString();
+		       label = (value == null) ? "Delete" : value.toString();
 		       button.setText(label);
 		       return button;
 		     }
