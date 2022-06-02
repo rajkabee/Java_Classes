@@ -1,6 +1,7 @@
 package core.jdbc.usingDao;
 
 import java.sql.SQLException;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class JdbcDaoApp {
@@ -12,9 +13,13 @@ public class JdbcDaoApp {
 			do {
 				System.out.println("Enter your choice: ");
 				System.out.println("a. Add a new Student");
-				System.out.println("b. view a student's details");
+				System.out.println("b. View a student's details");
+				System.out.println("c. View all student's list");
+				System.out.println("d. Update a student's details");
+				System.out.println("e. Delete a student's details");
 				ch = sc.next();
-			} while (!(ch.equalsIgnoreCase("a") || ch.equalsIgnoreCase("b")));
+			} while (!(ch.equalsIgnoreCase("a") || ch.equalsIgnoreCase("b") || ch.equalsIgnoreCase("c")
+					|| ch.equalsIgnoreCase("d") || ch.equalsIgnoreCase("e")));
 
 			if (ch.equalsIgnoreCase("a")) {
 				// insert
@@ -36,6 +41,11 @@ public class JdbcDaoApp {
 				int id = sc.nextInt();
 				Student st = sDao.getOne(id);
 				System.out.println(st);
+			} else if (ch.equalsIgnoreCase("c")) {
+				ArrayList<Student> stList = sDao.getAll();
+				for (Student s : stList) {
+					System.out.println(s);
+				}
 			}
 
 			do {

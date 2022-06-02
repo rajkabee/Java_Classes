@@ -43,8 +43,18 @@ public class StudentDao extends AbstractDao<Student> {
 
 	@Override
 	public ArrayList<Student> getAll() throws SQLException {
-		// TODO Auto-generated method stub
-		return null;
+		ArrayList<Student> stList = new ArrayList();
+		connect();
+		query = "SELECT * FROM student";
+		pstm = con.prepareStatement(query);
+		rs = pstm.executeQuery();
+		while (rs.next()) {
+			Student st = new Student(rs.getInt("id"), rs.getString("fName"), rs.getString("lName"),
+					rs.getString("email"));
+			stList.add(st);
+
+		}
+		return stList;
 	}
 
 	@Override

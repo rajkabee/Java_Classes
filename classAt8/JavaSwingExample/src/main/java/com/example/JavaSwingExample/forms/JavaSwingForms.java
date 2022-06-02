@@ -6,10 +6,13 @@ package com.example.JavaSwingExample.forms;
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 import java.io.File;
 import java.io.IOException;
 
 import javax.imageio.ImageIO;
+import javax.swing.JButton;
 import javax.swing.JColorChooser;
 import javax.swing.JFrame;
 import javax.swing.JLabel;
@@ -17,11 +20,14 @@ import javax.swing.JPanel;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
+import com.example.JavaSwingExample.model.Product;
+import com.example.JavaSwingExample.model.ProductDao;
+
 public class JavaSwingForms {
 	public static void main(String[] args) throws IOException {
 		JFrame frame  = new JFrame();
 		frame.setTitle("My Frame");
-		
+		final Product product = new Product();
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setBounds(300, 150, 600, 400);
 		//frame.setSize(600, 400);
@@ -51,7 +57,7 @@ public class JavaSwingForms {
 		nameLabel.setForeground(Color.WHITE);
 		form.add(nameLabel);
 		
-		JTextField nameTextField = new JTextField();
+		final JTextField nameTextField = new JTextField();
 		nameTextField.setBounds(300, 60, 200, 25);
 		form.add(nameTextField);
 		
@@ -60,7 +66,7 @@ public class JavaSwingForms {
 		modelLabel.setForeground(Color.WHITE);
 		form.add(modelLabel);
 		
-		JTextField modelTextField = new JTextField();
+		final JTextField modelTextField = new JTextField();
 		modelTextField.setBounds(300, 100, 200, 25);
 		form.add(modelTextField);
 		
@@ -69,7 +75,7 @@ public class JavaSwingForms {
 		manufacturerLabel.setForeground(Color.WHITE);
 		form.add(manufacturerLabel);
 		
-		JTextField manufacturerTextField = new JTextField();
+		final JTextField manufacturerTextField = new JTextField();
 		manufacturerTextField.setBounds(300, 140, 200, 25);
 		form.add(manufacturerTextField);
 		
@@ -78,7 +84,7 @@ public class JavaSwingForms {
 		descriptionLabel.setForeground(Color.WHITE);
 		form.add(descriptionLabel);
 		
-		JTextArea descriptionTextField = new JTextArea();
+		final JTextArea descriptionTextField = new JTextArea();
 		descriptionTextField.setBounds(300, 180, 200, 50);
 		form.add(descriptionTextField);
 		
@@ -87,10 +93,37 @@ public class JavaSwingForms {
 		colorLabel.setForeground(Color.WHITE);
 		form.add(colorLabel);
 		
-		JColorChooser colorChooser = new JColorChooser();
-		colorChooser.setBounds(300,240, 200, 30);
+		final JButton colorChooserBtn = new JButton("Choose Color");
+		colorChooserBtn.setBounds(300, 240, 200, 30);
+		form.add(colorChooserBtn);
 		
-		form.add(colorChooser);
+		JButton submitBtn= new JButton("Submit");
+		submitBtn.setBounds(100, 280, 400, 40);
+		form.add(submitBtn);
+		
+		colorChooserBtn.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				Color backgroundColor = JColorChooser.showDialog(new JFrame(),
+		                "Choose background color", Color.white);
+				colorChooserBtn.setBackground(backgroundColor);
+				product.setColor(backgroundColor);
+				
+			}
+		});
+		submitBtn.addActionListener(new ActionListener() {
+			
+			public void actionPerformed(ActionEvent e) {
+				product.setProductName(nameTextField.getText());
+				//product.setModel(modelTextField.getText());
+				product.setDescription(descriptionTextField.getText());
+				product.setBrand(manufacturerTextField.getText());
+				ProductDao pDao = new ProductDao();
+				pDao.save(product);
+				
+			}
+		});
+		
 		frame.setVisible(true);
 	}
 }
