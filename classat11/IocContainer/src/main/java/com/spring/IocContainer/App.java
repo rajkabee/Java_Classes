@@ -11,9 +11,12 @@ public class App
         ApplicationContext context = new ClassPathXmlApplicationContext("beans.xml");
         System.out.println("Application context created!");
         Student st =(Student)context.getBean("st");
-        st.setfName("SAnjog");
-        st.setlName("Baidhya");
+        //st.setfName("Sanjog");
+        //st.setlName("Baidhya");
         System.out.println(st);
+        
+        Student st2 = context.getBean("student", Student.class);
+        System.out.println(st2);
         
     }
 }

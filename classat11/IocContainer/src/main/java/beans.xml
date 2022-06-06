@@ -3,7 +3,28 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
-
-	<bean id = "st" class = "com.spring.IocContainer.Student" />
+	<bean id="laptop" class="com.spring.IocContainer.Laptop">
+		<property name="lId" value="123"/>
+		<property name="brand" value="HP"/>
+		<property name="model" value="spectre"/>
+	</bean>
+	<bean id="lp" class="com.spring.IocContainer.Laptop">
+		<property name="lId" value="456"/>
+		<property name="brand" value="dell"/>
+		<property name="model" value="Vostro 3400"/>
+	</bean>
+	<bean id = "st" class = "com.spring.IocContainer.Student" autowire="constructor">
+		<property name="id" value="1"/>
+		<property name="fName" value="Sanjog"/>
+		<property name="lName" value="Pradhan"/>
+		<property name="email" value="sanjog@gmail.com"/>
+	</bean>
+	<bean id="student" class="com.spring.IocContainer.Student">
+		<constructor-arg name="id" value="2"/>
+		<constructor-arg name="fName" value="Birat"/>
+		<constructor-arg name="lName" value="Shah"/>
+		<constructor-arg name="email" value="birat@gmail.com"/>
+		<constructor-arg name="lp" ref="laptop"/>
+	</bean>
 
 </beans>
