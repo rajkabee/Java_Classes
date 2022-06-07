@@ -246,3 +246,42 @@
 2022-06-06 10:51:01,361 [Worker-38: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
 2022-06-06 10:51:01,362 [Worker-38: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-06 10:51:01,362 [Worker-38: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:06:28,257 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-06-07 10:20:18,919 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:20:18,920 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:20:18,922 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:20:18,922 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:20:55,505 [Worker-10: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:20:55,505 [Worker-10: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:20:55,507 [Worker-10: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:20:55,507 [Worker-10: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:24:10,695 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:10,696 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:24:10,697 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:10,697 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:24:41,572 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:41,572 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:24:41,573 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:41,573 [Worker-23: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:24:58,640 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:58,640 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:24:58,642 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:24:58,642 [Worker-25: Launching App] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:31:50,612 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2022-06-07 10:32:10,827 [Worker-34: Launching IocContainer] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer
+2022-06-07 10:32:10,828 [Worker-34: Launching IocContainer] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -Phello -B hello
+2022-06-07 10:32:23,069 [Worker-35: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:32:23,070 [Worker-35: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\main\resources
+2022-06-07 10:32:23,070 [Worker-35: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-06-07 10:32:23,071 [Worker-35: Build Project] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer\src\test\resources
+2022-06-07 10:32:51,094 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2022-06-07 10:32:58,796 [Worker-29: Launching IocContainer (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate - D:\Users\Kabiraj\eclipse-workspace\classat11\IocContainer
+2022-06-07 10:32:58,797 [Worker-29: Launching IocContainer (1)] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn -B 
+2022-06-07 10:41:55,914 [Worker-40: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' D:\Users\Kabiraj\eclipse-workspace\classat11\annotationConfiguration\pom.xml
+2022-06-07 10:41:57,838 [Worker-40: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.spring:annotationConfiguration:0.0.1-SNAPSHOT @ D:\Users\Kabiraj\eclipse-workspace\classat11\annotationConfiguration\pom.xml.
+2022-06-07 10:41:58,050 [Worker-40: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /annotationConfiguration/src/main/java
+2022-06-07 10:41:58,061 [Worker-40: Creating maven-archetype-quickstart] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /annotationConfiguration/src/test/java
+2022-06-07 10:41:58,129 [Worker-40: Creating maven-archetype-quickstart] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 2 sec
+2022-06-07 10:42:51,990 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2022-06-07 10:43:26,640 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-06-07 10:56:53,119 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

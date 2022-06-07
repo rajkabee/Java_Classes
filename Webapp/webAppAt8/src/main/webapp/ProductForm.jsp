@@ -7,8 +7,10 @@
 <title>Product Form</title>
 </head>
 <body>
-<%=request.getParameter("msg") %>
-
+${msg}
+<%=request.getAttribute("msg") %>
+<%!int price =2000; %>
+<%=price %>
  <h1>Product Form</h1>
     <form action="/webAppAt8/addProduct" method= "POST">
     <label for="productName">Product Name: </label>

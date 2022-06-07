@@ -24,7 +24,7 @@ public class ProductFormServlet extends HttpServlet {
 		Product product = new Product(
 									request.getParameter("productName"),
 									request.getParameter("manufacturer"),
-									request.getParameter("dexcription"),
+									request.getParameter("description"),
 									Float.parseFloat(request.getParameter("price")),
 									Boolean.parseBoolean(request.getParameter("isInStock"))
 									);
@@ -40,7 +40,7 @@ public class ProductFormServlet extends HttpServlet {
 				request.setAttribute("msg", "product failed to be added to the database");
 				request.getRequestDispatcher("ProductForm.jsp").forward(request, response);
 			}
-		} catch (SQLException e) {
+		} catch (SQLException | ClassNotFoundException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
