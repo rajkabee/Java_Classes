@@ -12,5 +12,6 @@
 <br>
 <a href = "/webAppAt8/HelloServlet">Hello Servlet</a>
 <a href = "/webAppAt8/welcome">Hello Servlet</a>
+<% %>
 </body>
 </html>
