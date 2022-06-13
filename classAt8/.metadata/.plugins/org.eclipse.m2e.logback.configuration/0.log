@@ -529,3 +529,4 @@
 2022-06-08 08:36:12,039 [Worker-24: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classAt8\JavaSwingExample\src\main\resources
 2022-06-08 08:36:12,042 [Worker-24: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2022-06-08 08:36:12,042 [Worker-24: Launching Tomcat v9.0 Server at localhost] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Users\Kabiraj\eclipse-workspace\classAt8\JavaSwingExample\src\test\resources
+2022-06-09 08:14:29,339 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  xmlns="http://www.springframework.org/schema/beans"
+  xmlns:context="http://www.springframework.org/schema/context"
+     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="
+   http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans.xsd
+   http://www.springframework.org/schema/context
+   http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+    <context:annotation-config/>
+    <context:component-scan base-package="com.spring.dependencyInjection"/>
+    <context:property-placeholder location="application.properties"/>
+    
+    <bean id="book" class="com.spring.dependencyInjection.Book">
+    	
+    </bean>
+    
+	<bean id="student" class="com.spring.dependencyInjection.Student">
+		<constructor-arg name="id" value="123"/>
+		<constructor-arg name="name" value="prabin"/>
+		<constructor-arg name="address" value="ktm"/>
+		<constructor-arg name="book" ref="book">
+		
+		</constructor-arg>
+	</bean>        
+        
+        
+</beans>
