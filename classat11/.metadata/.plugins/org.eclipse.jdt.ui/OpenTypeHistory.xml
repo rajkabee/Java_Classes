@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <typeInfoHistroy>
     <typeInfo handle="=BasicsIntro/src&lt;jdbc.dao{AbstractDao.java[AbstractDao" modifiers="1025" timestamp="1652070813917"/>
+    <typeInfo handle="=springBootWithThymeleaf/C:\/Users\/Kabiraj\/.m2\/repository\/org\/springframework\/data\/spring-data-jpa\/2.7.0\/spring-data-jpa-2.7.0.jar=/maven.pomderived=/true=/=/maven.pomderived=/true=/=/maven.groupId=/org.springframework.data=/=/maven.artifactId=/spring-data-jpa=/=/maven.version=/2.7.0=/=/maven.scope=/compile=/&lt;org.springframework.data.jpa.repository(JpaRepository.class[JpaRepository" modifiers="1537" timestamp="1655359949477"/>
 </typeInfoHistroy>
