@@ -15,7 +15,8 @@
     <h1>Users Page</h1>
 	<a href="/addUserForm"><button>Add User</button></a>
 	
-	<table class="table border-colapse border-2">
+	<table class="table">
+	<thead class ="thead-light">
 	<tr>
 		<th>Id</th>
 		<th>First Name</th>
@@ -24,6 +25,7 @@
 		<th>Address</th>
 		<th>Action</th>
 	</tr>
+	</thead>
    <th:block th:each="user : ${users}">
       <tr>
       	<td th:text="${user.id}">...</td>
@@ -31,7 +33,10 @@
          <td th:text="${user.lName}">...</td>
          <td th:text="${user.email}">...</td>
          <td  th:text="${user.address}">...</td>
-         <td><a th:href="@{'/deleteUser/'+${user.id}}"><button>Delete</button></a></td>
+         <td>
+         	<a th:href="@{'/deleteUser/'+${user.id}}"><button>Delete</button></a>
+         	<a th:href="@{'/updateUserForm/'+${user.id}}"><button>Edit</button></a>
+         </td>
       </tr>
    </th:block>
 </table>
