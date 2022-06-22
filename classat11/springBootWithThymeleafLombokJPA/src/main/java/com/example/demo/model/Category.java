@@ -8,5 +8,5 @@ public class Category {
 	String description;
 	boolean isActive;
 	Timestamp createdDate;
-	Timestamp update
+	Timestamp updateDate;
 }
