@@ -1,12 +1,16 @@
-package com.example.swingApp;
+package com.example.swingApp.tables;
 
 import java.util.ArrayList;
 
 import javax.swing.JFrame;
+import javax.swing.JScrollPane;
+import javax.swing.JTable;
 
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 import org.hibernate.cfg.Configuration;
+
+import com.example.swingApp.User;
 
 public class UserTableFrame {
 	public static void main(String[] args) {
@@ -34,6 +38,10 @@ public class UserTableFrame {
 //			}
 //			System.out.println();
 //		}
+
+		JTable table = new JTable(users, cols);
+		JScrollPane tablePane = new JScrollPane(table);
+		frame.add(tablePane);
 		tx.commit();
 		session.close();
 		frame.pack();
